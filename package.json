@@ -1,0 +1,15 @@
+{
+  "name": "paradise",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Emil Rais",
+  "license": "ISC",
+  "dependencies": {
+    "@types/email-validator": "^1.0.30",
+    "@types/es6-promise": "0.0.32",
+    "email-validator": "^1.0.7",
+    "es6-promise": "^4.1.1"
+  }
+}

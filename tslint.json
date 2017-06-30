@@ -1,0 +1,10 @@
+{
+    "extends": "tslint:recommended",
+    "rules":{
+        "member-access": false,
+        "no-empty-interface": false,
+        "curly": false,
+        "no-console": [false],
+        "interface-name": [false]
+    }
+}
