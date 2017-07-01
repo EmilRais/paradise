@@ -2,7 +2,7 @@ import * as emailValidator from "email-validator";
 
 import { Action, Rule, isPresent, isString } from "../core";
 
-export class Email implements Rule {
+export class EmailRule implements Rule {
     validate(path: string, value: any, action: Action): void {
         if ( !isPresent(value) ) return action.ignore();
         if ( !isString(value) ) return action.ignore();

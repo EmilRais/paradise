@@ -1,6 +1,6 @@
 import { Action, Rule, isNumber, isPresent } from "../core";
 
-export class Multiple implements Rule {
+export class MultipleRule implements Rule {
     constructor(private target: number) {}
 
     validate(path: string, value: any, action: Action): void {

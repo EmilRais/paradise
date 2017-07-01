@@ -1,6 +1,6 @@
 import { Action, Rule, isBoolean, isPresent } from "../core";
 
-export class Boolean implements Rule {
+export class BooleanRule implements Rule {
     validate(path: string, value: any, action: Action): void {
         if ( !isPresent(value) ) return action.ignore();
         if ( isBoolean(value) ) return action.accept();

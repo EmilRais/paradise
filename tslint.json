@@ -8,6 +8,7 @@
         "arrow-parens": false,
         "no-unused-expression": false,
         "object-literal-sort-keys": false,
+        "max-classes-per-file": [false],
         "trailing-comma": [false],
         "no-console": [false],
         "interface-name": [false],
@@ -15,7 +16,7 @@
             true,
             {
                 "import-sources-order": "case-insensitive",
-                "named-imports-order": "lowercase-last"
+                "named-imports-order": "any"
             }
         ]
     }
