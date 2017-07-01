@@ -3,12 +3,26 @@
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
   "author": "Emil Rais",
   "license": "ISC",
+  "scripts": {
+    "lint": "tslint **/*.ts",
+    "build": "tsc",
+    "pretest": "npm run build",
+    "test": "mocha --recursive build/test"
+  },
   "dependencies": {
+    "email-validator": "^1.0.7",
+    "es6-promise": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.1",
     "@types/email-validator": "^1.0.30",
     "@types/es6-promise": "0.0.32",
-    "email-validator": "^1.0.7"
+    "@types/mocha": "^2.2.41",
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "tslint": "^5.4.3",
+    "typescript": "^2.4.1"
   }
 }

@@ -1,5 +1,4 @@
-import { isNumber, isPresent } from "./predicates";
-import { Action, Rule } from "./rule.model";
+import { Action, Rule, isNumber, isPresent } from "../core";
 
 export class Multiple implements Rule {
     constructor(private target: number) {}
