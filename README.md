@@ -1,6 +1,6 @@
 # Paradise
 
-A declarative and pleasurable approach to thorough validation.
+A declarative and effective approach to thorough validation.
 
 ## Built-in rules:
 
