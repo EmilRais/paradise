@@ -12,6 +12,7 @@
     "test": "mocha --recursive build/test"
   },
   "dependencies": {
+    "country-list": "^1.1.0",
     "currency-codes": "^1.1.2",
     "email-validator": "^1.0.7",
     "es6-promise": "^4.1.1"

@@ -46,3 +46,15 @@ A declarative and effective approach to thorough validation.
     ✓ ignores non-string values
     ✓ rejects values that are not valid currency codes
     ✓ accepts values that are valid currency codes
+
+### CountryRule
+    ✓ ignores missing values
+    ✓ ignores non-string values
+    ✓ rejects values that are not country names
+    ✓ accepts values that are valid country names
+
+### CountryCodeRule
+    ✓ ignores missing values
+    ✓ ignores non-string values
+    ✓ rejects values that are not valid two digit country codes
+    ✓ accepts values that are valid two digit country codes
