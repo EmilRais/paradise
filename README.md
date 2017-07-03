@@ -40,3 +40,9 @@ A declarative and effective approach to thorough validation.
     ✓ ignores non-string values
     ✓ rejects values that do not satisfy pattern
     ✓ accepts values that satisfy pattern
+
+### CurrencyRule
+    ✓ ignores missing values
+    ✓ ignores non-string values
+    ✓ rejects values that are not valid currency codes
+    ✓ accepts values that are valid currency codes
