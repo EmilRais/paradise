@@ -4,6 +4,12 @@ A declarative and effective approach to thorough validation.
 
 ## Built-in rules:
 
+### AllRule
+    ✓ ignores when no rules are specified
+    ✓ ignores when all rules are ignored
+    ✓ rejects when any rule is rejected
+    ✓ accepts when any rule is accepted and none are rejected
+
 ### RequiredRule
     ✓ rejects missing values
     ✓ accepts present values
