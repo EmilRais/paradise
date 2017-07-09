@@ -25,3 +25,7 @@ export const isNumber = (value: any) => {
 export const isString = (value: any) => {
     return typeof value === "string";
 };
+
+export const isDate = (value: any) => {
+    return value.constructor === Date;
+};

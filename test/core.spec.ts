@@ -1,7 +1,7 @@
 import * as chai from "chai";
 const should = chai.should();
 
-import { isBoolean, isNumber, isPresent, isString } from "../source/core";
+import { isBoolean, isNumber, isPresent, isString, isDate } from "../source/core";
 
 describe("core", () => {
 
@@ -50,6 +50,16 @@ describe("core", () => {
 
         it("should be true if string", () => {
             isString("some-string").should.be.true;
+        });
+    });
+
+    describe("isDate", () => {
+        it("should be false if not a date", () => {
+            isDate(42).should.be.false;
+        });
+
+        it("should be true if date", () => {
+            isDate(new Date()).should.be.true;
         });
     });
 });

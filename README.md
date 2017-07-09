@@ -24,6 +24,11 @@ A declarative and effective approach to thorough validation.
     ✓ rejects values that are not a multiple of target
     ✓ accepts values that are a multiple of target
 
+### DateRule
+    ✓ ignores missing values
+    ✓ rejects values that are not dates
+    ✓ accepts values that are dates
+
 ### StringRule
     ✓ ignores missing values
     ✓ rejects non-string values
