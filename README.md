@@ -26,6 +26,14 @@ A declarative and effective approach to thorough validation.
     ✓ rejects when any contained items are rejected
     ✓ accepts when an array and no contained items are rejected
 
+### ObjectRule
+    ✓ ignores missing values
+    ✓ rejects values that are not objects
+    ✓ accepts when an array and no schema specified
+    ✓ rejects when object contains unspecified fields
+    ✓ rejects when any fields are rejected
+    ✓ accepts when no fields are rejected
+
 ### BooleanRule
     ✓ ignores missing values
     ✓ rejects non-boolean values

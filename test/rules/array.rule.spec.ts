@@ -11,7 +11,7 @@ const should = chai.should();
 describe("ArrayRule", () => {
 
     it("should ignore if value is missing", () => {
-        const rule = new ArrayRule([]);
+        const rule = new ArrayRule();
         const value: any = null;
         const action = new ActionMock();
         rule.validate("$", value, action);
@@ -22,7 +22,7 @@ describe("ArrayRule", () => {
     });
 
     it("should reject if value is not an array", () => {
-        const rule = new ArrayRule([]);
+        const rule = new ArrayRule();
         const value = 42;
         const action = new ActionMock();
         rule.validate("$", value, action);
@@ -30,6 +30,17 @@ describe("ArrayRule", () => {
         return action.check((result: Reject) => {
             result.should.be.instanceOf(Reject);
             result.messages.should.deep.equal(['"$" was not an array']);
+        });
+    });
+
+    it("should accept if array and no rules specified", () => {
+        const rule = new ArrayRule();
+        const value = [42, null, "some-value"];
+        const action = new ActionMock();
+        rule.validate("$", value, action);
+
+        return action.check(result => {
+            result.should.be.instanceOf(Accept);
         });
     });
 

@@ -33,3 +33,7 @@ export const isDate = (value: any) => {
 export const isArray = (value: any) => {
     return value.constructor === Array;
 };
+
+export const isObject = (value: any) => {
+    return value === Object(value);
+};
