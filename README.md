@@ -10,6 +10,12 @@ A declarative and effective approach to thorough validation.
     ✓ rejects when any rule is rejected
     ✓ accepts when any rule is accepted and none are rejected
 
+### AnyRule
+    ✓ ignores when no rules are specified
+    ✓ ignores when all rules are ignored
+    ✓ rejects when any rule is rejected and none are accepted
+    ✓ accepts when any rule is accepted
+
 ### RequiredRule
     ✓ rejects missing values
     ✓ accepts present values
