@@ -20,6 +20,12 @@ A declarative and effective approach to thorough validation.
     ✓ rejects missing values
     ✓ accepts present values
 
+### ArrayRule
+    ✓ ignores missing values
+    ✓ rejects values that are not arrays
+    ✓ rejects when any contained items are rejected
+    ✓ accepts when an array and no contained items are rejected
+
 ### BooleanRule
     ✓ ignores missing values
     ✓ rejects non-boolean values

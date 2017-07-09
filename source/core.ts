@@ -29,3 +29,7 @@ export const isString = (value: any) => {
 export const isDate = (value: any) => {
     return value.constructor === Date;
 };
+
+export const isArray = (value: any) => {
+    return value.constructor === Array;
+};
