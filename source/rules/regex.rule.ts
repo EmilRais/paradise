@@ -1,6 +1,6 @@
 import { Action, Rule, isPresent, isString } from "../core";
 
-export class Regex implements Rule {
+export class RegexRule implements Rule {
     constructor(private pattern: RegExp) {}
 
     validate(path: string, value: any, action: Action): void {

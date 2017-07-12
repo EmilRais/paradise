@@ -1,0 +1,11 @@
+source/
+test/
+node_modules/
+build/test/
+
+.gitignore
+.npmignore
+package-lock.json
+README.md
+tsconfig.json
+tslint.json

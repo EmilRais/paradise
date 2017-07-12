@@ -1,8 +1,9 @@
 {
   "name": "paradise",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "",
-  "main": "index.js",
+  "main": "build/source/index.js",
+  "types": "build/source/index.d.ts",
   "author": "Emil Rais",
   "license": "ISC",
   "scripts": {

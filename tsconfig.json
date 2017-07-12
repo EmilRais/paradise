@@ -4,6 +4,7 @@
         "rootDir": "./",
         "noImplicitAny": true,
         "alwaysStrict": true,
+        "declaration": true,
         "target": "es5"
     },
     "include": [

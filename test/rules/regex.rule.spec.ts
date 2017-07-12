@@ -1,7 +1,7 @@
 import * as chai from "chai";
 import { Promise } from "es6-promise";
 
-import { Regex } from "../../source/rules/regex.rule";
+import { RegexRule } from "../../source/rules/regex.rule";
 import { ActionMock, Accept, Ignore, Reject } from "../action.mock";
 
 const should = chai.should();
@@ -9,7 +9,7 @@ const should = chai.should();
 describe("RegexRule", () => {
 
     it("should ignore if value is missing", () => {
-        const rule = new Regex(/some/);
+        const rule = new RegexRule(/some/);
         const value: any = null;
         const action = new ActionMock();
         rule.validate("$", value, action);
@@ -20,7 +20,7 @@ describe("RegexRule", () => {
     });
 
     it("should ignore if value is not a string", () => {
-        const rule = new Regex(/some/);
+        const rule = new RegexRule(/some/);
         const value = 42;
         const action = new ActionMock();
         rule.validate("$", value, action);
@@ -31,7 +31,7 @@ describe("RegexRule", () => {
     });
 
     it("should accept if value matches pattern", () => {
-        const rule = new Regex(/some/);
+        const rule = new RegexRule(/some/);
         const value = "some-string";
         const action = new ActionMock();
         rule.validate("$", value, action);
@@ -42,7 +42,7 @@ describe("RegexRule", () => {
     });
 
     it("should reject if value does not match pattern", () => {
-        const rule = new Regex(/some/);
+        const rule = new RegexRule(/some/);
         const value = "another-string";
         const action = new ActionMock();
         rule.validate("$", value, action);
