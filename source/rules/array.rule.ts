@@ -4,8 +4,11 @@ import { Action, Rule } from "../models";
 import { isPresent, isArray } from "../predicates";
 import { AllRule } from "../rules";
 
-export class ArrayRule implements Rule {
-    constructor(private rules?: Rule[]) {}
+export class ArrayRule extends Rule {
+
+    constructor(private rules?: Rule[]) {
+        super();
+    }
 
     validate(path: string, value: any, action: Action): void {
         if ( !isPresent(value) ) return action.ignore();

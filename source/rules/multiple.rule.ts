@@ -1,8 +1,11 @@
 import { Action, Rule } from "../models";
 import { isPresent, isNumber } from "../predicates";
 
-export class MultipleRule implements Rule {
-    constructor(private target: number) {}
+export class MultipleRule extends Rule {
+
+    constructor(private target: number) {
+        super();
+    }
 
     validate(path: string, value: any, action: Action): void {
         if ( !isPresent(value) ) return action.ignore();

@@ -1,8 +1,11 @@
 import { Action, Rule } from "../models";
 import { isPresent, isString } from "../predicates";
 
-export class RegexRule implements Rule {
-    constructor(private pattern: RegExp) {}
+export class RegexRule extends Rule {
+
+    constructor(private pattern: RegExp) {
+        super();
+    }
 
     validate(path: string, value: any, action: Action): void {
         if ( !isPresent(value) ) return action.ignore();

@@ -8,8 +8,11 @@ export interface Schema {
     [keys: string]: Rule[];
 }
 
-export class ObjectRule implements Rule {
-    constructor(private schema?: Schema) {}
+export class ObjectRule extends Rule {
+
+    constructor(private schema?: Schema) {
+        super();
+    }
 
     validate(path: string, value: any, action: Action): void {
         if ( !isPresent(value) ) return action.ignore();

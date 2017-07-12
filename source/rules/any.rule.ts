@@ -2,8 +2,11 @@ import * as async from "async";
 
 import { Action, Rule } from "../models";
 
-export class AnyRule implements Rule {
-    constructor(private rules: Rule[]) {}
+export class AnyRule extends Rule {
+
+    constructor(private rules: Rule[]) {
+        super();
+    }
 
     validate(path: string, value: any, action: Action): void {
         async.reduce(this.rules, null, (result, rule, next) => {

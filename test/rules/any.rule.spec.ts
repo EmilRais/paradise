@@ -1,5 +1,4 @@
 import * as chai from "chai";
-import { Promise } from "es6-promise";
 
 import {
     AnyRule, CountryRule, EmailRule, MultipleRule, NumberRule, RequiredRule, StringRule

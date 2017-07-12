@@ -1,6 +1,6 @@
 {
   "name": "paradise",
-  "version": "0.3.0",
+  "version": "0.8.0",
   "description": "",
   "main": "build/source/index.js",
   "types": "build/source/index.d.ts",
@@ -8,23 +8,18 @@
   "license": "ISC",
   "scripts": {
     "clean": "rm -rf build/",
-    
     "prebuild": "npm run clean",
     "build": "tsc",
-
     "pretest": "npm run build",
     "test": "mocha --recursive build/test",
-    
     "lint": "tslint **/*.ts",
-    
     "prepublishOnly": "npm run lint && npm run test"
   },
   "dependencies": {
     "async": "^2.5.0",
     "country-list": "^1.1.0",
     "currency-codes": "^1.1.2",
-    "email-validator": "^1.0.7",
-    "es6-promise": "^4.1.1"
+    "email-validator": "^1.0.7"
   },
   "devDependencies": {
     "@types/async": "^2.0.40",

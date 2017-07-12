@@ -3,7 +3,8 @@ import * as emailValidator from "email-validator";
 import { Action, Rule } from "../models";
 import { isPresent, isString } from "../predicates";
 
-export class EmailRule implements Rule {
+export class EmailRule extends Rule {
+
     validate(path: string, value: any, action: Action): void {
         if ( !isPresent(value) ) return action.ignore();
         if ( !isString(value) ) return action.ignore();

@@ -1,5 +1,4 @@
 import * as chai from "chai";
-import { Promise } from "es6-promise";
 
 import { RequiredRule } from "../../source/rules";
 import { ActionMock, Accept, Reject } from "../action.mock";

@@ -2,7 +2,8 @@ const currencyCodes = require("currency-codes");
 import { Action, Rule } from "../models";
 import { isPresent, isString } from "../predicates";
 
-export class CurrencyRule implements Rule {
+export class CurrencyRule extends Rule {
+
     validate(path: string, value: any, action: Action): void {
         if ( !isPresent(value) ) return action.ignore();
         if ( !isString(value) ) return action.ignore();
