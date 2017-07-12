@@ -1,5 +1,6 @@
 const currencyCodes = require("currency-codes");
-import { Action, Rule, isPresent, isString } from "../core";
+import { Action, Rule } from "../core";
+import { isPresent, isString } from "../predicates";
 
 export class CurrencyRule implements Rule {
     validate(path: string, value: any, action: Action): void {

@@ -1,5 +1,6 @@
 const countryList = require("country-list")();
-import { Action, Rule, isPresent, isString } from "../core";
+import { Action, Rule } from "../core";
+import { isPresent, isString } from "../predicates";
 
 export class CountryRule implements Rule {
     validate(path: string, value: any, action: Action): void {

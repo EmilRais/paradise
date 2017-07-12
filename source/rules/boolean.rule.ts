@@ -1,4 +1,5 @@
-import { Action, Rule, isBoolean, isPresent } from "../core";
+import { Action, Rule } from "../core";
+import { isBoolean, isPresent } from "../predicates";
 
 export class BooleanRule implements Rule {
     validate(path: string, value: any, action: Action): void {

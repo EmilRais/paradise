@@ -13,6 +13,7 @@
         "trailing-comma": [false],
         "no-console": [false],
         "interface-name": [false],
+        "variable-name": [true, "check-format", "allow-pascal-case"],
         "ordered-imports": [
             true,
             {

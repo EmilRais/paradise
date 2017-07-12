@@ -1,6 +1,7 @@
 import * as async from "async";
 
-import { Action, Rule, isPresent, isArray } from "../core";
+import { Action, Rule } from "../core";
+import { isPresent, isArray } from "../predicates";
 import { AllRule } from "./all.rule";
 
 export class ArrayRule implements Rule {

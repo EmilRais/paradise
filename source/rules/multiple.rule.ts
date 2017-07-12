@@ -1,4 +1,5 @@
-import { Action, Rule, isNumber, isPresent } from "../core";
+import { Action, Rule } from "../core";
+import { isPresent, isNumber } from "../predicates";
 
 export class MultipleRule implements Rule {
     constructor(private target: number) {}

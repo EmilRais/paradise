@@ -1,9 +1,9 @@
 import * as chai from "chai";
 const should = chai.should();
 
-import { isBoolean, isNumber, isPresent, isString, isDate, isArray } from "../source/core";
+import { isBoolean, isNumber, isPresent, isString, isDate, isArray } from "../source/predicates";
 
-describe("core", () => {
+describe("predicates", () => {
 
     describe("isPresent", () => {
         it("should be false if undefined", () => {

@@ -1,14 +1,34 @@
-export { AllRule } from "./rules/all.rule";
-export { AnyRule } from "./rules/any.rule";
-export { ArrayRule } from "./rules/array.rule";
-export { BooleanRule } from "./rules/boolean.rule";
-export { CountryCodeRule } from "./rules/country-code.rule";
-export { CurrencyRule } from "./rules/currency.rule";
-export { DateRule } from "./rules/date.rule";
-export { EmailRule } from "./rules/email.rule";
-export { MultipleRule } from "./rules/multiple.rule";
-export { NumberRule } from "./rules/number.rule";
-export { ObjectRule } from "./rules/object.rule";
-export { RegexRule } from "./rules/regex.rule";
-export { RequiredRule } from "./rules/required.rule";
-export { StringRule } from "./rules/string.rule";
+import { Rule } from "./core";
+import { Schema } from "./rules/object.rule";
+
+import {
+    AllRule,
+    AnyRule,
+    ArrayRule,
+    BooleanRule,
+    CountryCodeRule,
+    CurrencyRule,
+    DateRule,
+    EmailRule,
+    MultipleRule,
+    NumberRule,
+    ObjectRule,
+    RegexRule,
+    RequiredRule,
+    StringRule
+} from "./rules";
+
+export const All = (rules: Rule[]) => new AllRule(rules);
+export const Any = (rules: Rule[]) => new AnyRule(rules);
+export const Array = (rules?: Rule[]) => new ArrayRule(rules);
+export const Boolean = () => new BooleanRule();
+export const CountryCode = () => new CountryCodeRule();
+export const Currency = () => new CurrencyRule();
+export const Date = () => new DateRule();
+export const Email = () => new EmailRule();
+export const Multiple = (target: number) => new MultipleRule(target);
+export const Number = () => new NumberRule();
+export const Object = (schema?: Schema) => new ObjectRule(schema);
+export const Regex = (pattern: RegExp) => new RegexRule(pattern);
+export const Required = () => new RequiredRule();
+export const String = () => new StringRule();

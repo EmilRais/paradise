@@ -1,4 +1,5 @@
-import { Action, Rule, isPresent, isDate } from "../core";
+import { Action, Rule } from "../core";
+import { isPresent, isDate } from "../predicates";
 
 export class DateRule implements Rule {
     validate(path: string, value: any, action: Action): void {

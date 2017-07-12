@@ -1,4 +1,5 @@
-import { Action, Rule, isPresent, isString } from "../core";
+import { Action, Rule } from "../core";
+import { isPresent, isString } from "../predicates";
 
 export class RegexRule implements Rule {
     constructor(private pattern: RegExp) {}

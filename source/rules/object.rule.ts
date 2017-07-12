@@ -1,6 +1,7 @@
 import * as async from "async";
 
-import { Action, Rule, isPresent, isObject } from "../core";
+import { Action, Rule } from "../core";
+import { isPresent, isObject } from "../predicates";
 import { AllRule } from "./all.rule";
 
 export interface Schema {

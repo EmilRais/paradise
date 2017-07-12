@@ -1,4 +1,5 @@
-import { Action, Rule, isPresent } from "../core";
+import { Action, Rule } from "../core";
+import { isPresent } from "../predicates";
 
 export class RequiredRule implements Rule {
     validate(path: string, value: any, action: Action): void {
