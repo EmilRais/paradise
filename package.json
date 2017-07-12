@@ -1,16 +1,23 @@
 {
   "name": "paradise",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "",
   "main": "build/source/index.js",
   "types": "build/source/index.d.ts",
   "author": "Emil Rais",
   "license": "ISC",
   "scripts": {
-    "lint": "tslint **/*.ts",
+    "clean": "rm -rf build/",
+    
+    "prebuild": "npm run clean",
     "build": "tsc",
+
     "pretest": "npm run build",
-    "test": "mocha --recursive build/test"
+    "test": "mocha --recursive build/test",
+    
+    "lint": "tslint **/*.ts",
+    
+    "prepublish": "npm run lint && npm run test"
   },
   "dependencies": {
     "async": "^2.5.0",
