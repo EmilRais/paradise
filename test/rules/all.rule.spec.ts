@@ -1,12 +1,7 @@
 import * as chai from "chai";
 import { Promise } from "es6-promise";
 
-import { AllRule } from "../../source/rules/all.rule";
-import { CountryRule } from "../../source/rules/country.rule";
-import { EmailRule } from "../../source/rules/email.rule";
-import { MultipleRule } from "../../source/rules/multiple.rule";
-import { NumberRule } from "../../source/rules/number.rule";
-import { RequiredRule } from "../../source/rules/required.rule";
+import { AllRule, CountryRule, EmailRule, MultipleRule, NumberRule, RequiredRule } from "../../source/rules";
 import { ActionMock, Accept, Ignore, Reject } from "../action.mock";
 
 const should = chai.should();

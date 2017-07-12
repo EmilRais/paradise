@@ -1,6 +1,6 @@
 import * as emailValidator from "email-validator";
 
-import { Action, Rule } from "../core";
+import { Action, Rule } from "../models";
 import { isPresent, isString } from "../predicates";
 
 export class EmailRule implements Rule {

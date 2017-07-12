@@ -1,6 +1,6 @@
 import * as async from "async";
 
-import { Action, Rule } from "../core";
+import { Action, Rule } from "../models";
 
 export class AllRule implements Rule {
     constructor(private rules: Rule[]) {}

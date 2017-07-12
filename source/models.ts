@@ -1,5 +1,3 @@
-import { Promise } from "es6-promise";
-
 export interface Action {
     reject(messages: string[]): void;
     ignore(): void;

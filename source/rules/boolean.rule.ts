@@ -1,4 +1,4 @@
-import { Action, Rule } from "../core";
+import { Action, Rule } from "../models";
 import { isBoolean, isPresent } from "../predicates";
 
 export class BooleanRule implements Rule {

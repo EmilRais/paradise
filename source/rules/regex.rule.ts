@@ -1,4 +1,4 @@
-import { Action, Rule } from "../core";
+import { Action, Rule } from "../models";
 import { isPresent, isString } from "../predicates";
 
 export class RegexRule implements Rule {

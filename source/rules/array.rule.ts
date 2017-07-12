@@ -1,8 +1,8 @@
 import * as async from "async";
 
-import { Action, Rule } from "../core";
+import { Action, Rule } from "../models";
 import { isPresent, isArray } from "../predicates";
-import { AllRule } from "./all.rule";
+import { AllRule } from "../rules";
 
 export class ArrayRule implements Rule {
     constructor(private rules?: Rule[]) {}

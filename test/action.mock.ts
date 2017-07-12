@@ -1,4 +1,4 @@
-import { Action } from "../source/core";
+import { Action } from "../source/models";
 
 export class Reject { constructor(public messages: string[]) {} }
 export class Ignore {}

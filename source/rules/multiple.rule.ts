@@ -1,4 +1,4 @@
-import { Action, Rule } from "../core";
+import { Action, Rule } from "../models";
 import { isPresent, isNumber } from "../predicates";
 
 export class MultipleRule implements Rule {
