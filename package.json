@@ -12,7 +12,7 @@
     "build": "tsc",
     "pretest": "npm run build",
     "test": "mocha --recursive build/test",
-    "lint": "tslint **/*.ts",
+    "lint": "tslint 'source/**/*.ts' 'test/**/*.ts'",
     "prepublishOnly": "npm run lint && npm run test"
   },
   "dependencies": {
