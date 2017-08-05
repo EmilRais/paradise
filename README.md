@@ -89,3 +89,9 @@ A declarative and effective approach to thorough validation.
     ✓ ignores non-string values
     ✓ rejects values that are not valid two digit country codes
     ✓ accepts values that are valid two digit country codes
+
+### ValueRule
+    ✓ ignores missing values
+    ✓ ignores values that are neither boolean, number or string
+    ✓ rejects values that are not one of the target values
+    ✓ accepts values that are one of the target values

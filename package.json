@@ -1,6 +1,6 @@
 {
   "name": "paradise",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "",
   "main": "build/source/index.js",
   "types": "build/source/index.d.ts",

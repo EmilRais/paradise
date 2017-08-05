@@ -15,6 +15,7 @@ import {
     RegexRule,
     RequiredRule,
     StringRule,
+    ValueRule,
     Schema
 } from "./rules";
 
@@ -33,3 +34,4 @@ export const Object = (schema?: Schema) => new ObjectRule(schema);
 export const Regex = (pattern: RegExp) => new RegexRule(pattern);
 export const Required = () => new RequiredRule();
 export const String = () => new StringRule();
+export const Value = (targets: Array<boolean | number | string>) => new ValueRule(targets);

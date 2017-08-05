@@ -13,3 +13,4 @@ export * from "./rules/object.rule";
 export * from "./rules/regex.rule";
 export * from "./rules/required.rule";
 export * from "./rules/string.rule";
+export * from "./rules/value.rule";
