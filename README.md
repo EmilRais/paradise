@@ -95,3 +95,26 @@ A declarative and effective approach to thorough validation.
     ✓ ignores values that are neither boolean, number or string
     ✓ rejects values that are not one of the target values
     ✓ accepts values that are one of the target values
+
+### SizeRule
+    ✓ ignores missing values
+    ✓ ignores values that are neither number, string or array
+    ✓ accepts values that satisfy specified targets
+    
+    ✓ rejects numbers that are not above target.above
+    ✓ rejects numbers that are not minimum target.min
+    ✓ rejects numbers that are not exactly target.exactly
+    ✓ rejects numbers that are not maximum target.max
+    ✓ rejects numbers that are not below target.below
+
+    ✓ rejects strings whose lengths are not above target.above
+    ✓ rejects strings whose lengths are not minimum target.min
+    ✓ rejects strings whose lengths are not exactly target.exactly
+    ✓ rejects strings whose lengths are not maximum target.max
+    ✓ rejects strings whose lengths are not below target.below
+
+    ✓ rejects arrays whose lengths are not above target.above
+    ✓ rejects arrays whose lengths are not minimum target.min
+    ✓ rejects arrays whose lengths are not exactly target.exactly
+    ✓ rejects arrays whose lengths are not maximum target.max
+    ✓ rejects arrays whose lengths are not below target.below

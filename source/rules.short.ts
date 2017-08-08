@@ -14,6 +14,7 @@ import {
     ObjectRule,
     RegexRule,
     RequiredRule,
+    SizeRule, SizeTarget,
     StringRule,
     ValueRule,
     Schema
@@ -33,5 +34,6 @@ export const Number = () => new NumberRule();
 export const Object = (schema?: Schema) => new ObjectRule(schema);
 export const Regex = (pattern: RegExp) => new RegexRule(pattern);
 export const Required = () => new RequiredRule();
+export const Size = (target: SizeTarget) => new SizeRule(target);
 export const String = () => new StringRule();
 export const Value = (targets: Array<boolean | number | string>) => new ValueRule(targets);
