@@ -9,6 +9,7 @@ import {
     CurrencyRule,
     DateRule,
     EmailRule,
+    MandatoryFieldsRule,
     MultipleRule,
     NumberRule,
     ObjectRule,
@@ -30,6 +31,7 @@ export const Country = () => new CountryRule();
 export const Currency = () => new CurrencyRule();
 export const Date = () => new DateRule();
 export const Email = () => new EmailRule();
+export const MandatoryFields = (schema: Schema) => new MandatoryFieldsRule(schema);
 export const Multiple = (target: number) => new MultipleRule(target);
 export const Number = () => new NumberRule();
 export const Object = (schema?: Schema) => new ObjectRule(schema);

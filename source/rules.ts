@@ -7,6 +7,7 @@ export * from "./rules/country.rule";
 export * from "./rules/currency.rule";
 export * from "./rules/date.rule";
 export * from "./rules/email.rule";
+export * from "./rules/mandatory-fields.rule";
 export * from "./rules/multiple.rule";
 export * from "./rules/number.rule";
 export * from "./rules/object.rule";
