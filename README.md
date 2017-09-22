@@ -34,6 +34,12 @@ A declarative and effective approach to thorough validation.
     ✓ rejects when any fields are rejected
     ✓ accepts when no fields are rejected
 
+### RecognisedFieldsRule
+    ✓ ignores missing values
+    ✓ ignores values are not objects
+    ✓ rejects if object contains unspecified fields
+    ✓ accepts if all fields have been specified
+
 ### BooleanRule
     ✓ ignores missing values
     ✓ rejects non-boolean values
