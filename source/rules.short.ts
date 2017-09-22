@@ -12,6 +12,7 @@ import {
     MultipleRule,
     NumberRule,
     ObjectRule,
+    RecognisedFieldsRule,
     RegexRule,
     RequiredRule,
     SizeRule, SizeTarget,
@@ -32,6 +33,7 @@ export const Email = () => new EmailRule();
 export const Multiple = (target: number) => new MultipleRule(target);
 export const Number = () => new NumberRule();
 export const Object = (schema?: Schema) => new ObjectRule(schema);
+export const RecognisedFields = (fields: string[]) => new RecognisedFieldsRule(fields);
 export const Regex = (pattern: RegExp) => new RegexRule(pattern);
 export const Required = () => new RequiredRule();
 export const Size = (target: SizeTarget) => new SizeRule(target);
