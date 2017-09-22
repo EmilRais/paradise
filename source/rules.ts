@@ -11,6 +11,7 @@ export * from "./rules/mandatory-fields.rule";
 export * from "./rules/multiple.rule";
 export * from "./rules/number.rule";
 export * from "./rules/object.rule";
+export * from "./rules/optional-fields.rule";
 export * from "./rules/recognised-fields.rule";
 export * from "./rules/regex.rule";
 export * from "./rules/required.rule";

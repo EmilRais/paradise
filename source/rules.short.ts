@@ -13,6 +13,7 @@ import {
     MultipleRule,
     NumberRule,
     ObjectRule,
+    OptionalFieldsRule,
     RecognisedFieldsRule,
     RegexRule,
     RequiredRule,
@@ -35,6 +36,7 @@ export const MandatoryFields = (schema: Schema) => new MandatoryFieldsRule(schem
 export const Multiple = (target: number) => new MultipleRule(target);
 export const Number = () => new NumberRule();
 export const Object = (schema?: Schema) => new ObjectRule(schema);
+export const OptionalFields = (schema: Schema) => new OptionalFieldsRule(schema);
 export const RecognisedFields = (fields: string[]) => new RecognisedFieldsRule(fields);
 export const Regex = (pattern: RegExp) => new RegexRule(pattern);
 export const Required = () => new RequiredRule();

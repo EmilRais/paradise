@@ -47,6 +47,13 @@ A declarative and effective approach to thorough validation.
     ✓ rejects if any fields are rejected
     ✓ accepts when no fields are rejected
 
+### OptionalFieldsRule
+    ✓ ignores missing values
+    ✓ ignores values that are not objects
+    ✓ ignores missing fields
+    ✓ rejects if any fields are rejected
+    ✓ accepts when no fields are rejected
+
 ### BooleanRule
     ✓ ignores missing values
     ✓ rejects non-boolean values
