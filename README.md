@@ -29,10 +29,7 @@ A declarative and effective approach to thorough validation.
 ### ObjectRule
     ✓ ignores missing values
     ✓ rejects values that are not objects
-    ✓ accepts when an array and no schema specified
-    ✓ rejects when object contains unspecified fields
-    ✓ rejects when any fields are rejected
-    ✓ accepts when no fields are rejected
+    ✓ accepts when value is an object
 
 ### RecognisedFieldsRule
     ✓ ignores missing values

@@ -35,7 +35,7 @@ export const Email = () => new EmailRule();
 export const MandatoryFields = (schema: Schema) => new MandatoryFieldsRule(schema);
 export const Multiple = (target: number) => new MultipleRule(target);
 export const Number = () => new NumberRule();
-export const Object = (schema?: Schema) => new ObjectRule(schema);
+export const Object = () => new ObjectRule();
 export const OptionalFields = (schema: Schema) => new OptionalFieldsRule(schema);
 export const RecognisedFields = (fields: string[]) => new RecognisedFieldsRule(fields);
 export const Regex = (pattern: RegExp) => new RegexRule(pattern);

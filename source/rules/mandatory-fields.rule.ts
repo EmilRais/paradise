@@ -2,7 +2,11 @@ import * as async from "async";
 
 import { Action, Rule } from "../models";
 import { isPresent, isObject } from "../predicates";
-import { AllRule, Schema } from "../rules";
+import { AllRule } from "../rules";
+
+export interface Schema {
+    [keys: string]: Rule[];
+}
 
 export class MandatoryFieldsRule extends Rule {
 

@@ -30,47 +30,9 @@ describe("ObjectRule", () => {
         });
     });
 
-    it("should accept if an object and no schema specified", () => {
+    it("should accept if value is an object", () => {
         const rule = new ObjectRule();
         const value: any[] = [];
-        const action = new ActionMock();
-        rule.validate("$", value, action);
-
-        return action.check(result => {
-            result.should.be.instanceOf(Accept);
-        });
-    });
-
-    it("should reject if object contains unspecified fields", () => {
-        const rule = new ObjectRule({ someField: [] });
-        const value = { someField: 42, otherField: "some-value" };
-        const action = new ActionMock();
-        rule.validate("$", value, action);
-
-        return action.check((result: Reject) => {
-            result.should.be.instanceOf(Reject);
-            result.messages.should.deep.equal(['"$" has unrecognised field "otherField"']);
-        });
-    });
-
-    it("should reject if any fields are rejected", () => {
-        const rule = new ObjectRule({ someField: [new RequiredRule(), new StringRule()] });
-        const value = { someField: 42, otherField: "some-value" };
-        const action = new ActionMock();
-        rule.validate("$", value, action);
-
-        return action.check((result: Reject) => {
-            result.should.be.instanceOf(Reject);
-            result.messages.should.deep.equal([
-                '"$" has unrecognised field "otherField"',
-                '"$.someField" was not a string'
-            ]);
-        });
-    });
-
-    it("should accept if no fields are rejected", () => {
-        const rule = new ObjectRule({ someField: [new RequiredRule(), new StringRule()] });
-        const value = { someField: "some-value" };
         const action = new ActionMock();
         rule.validate("$", value, action);
 
