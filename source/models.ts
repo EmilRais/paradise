@@ -8,12 +8,12 @@ export interface Action {
 export abstract class Rule {
     abstract validate(path: string, value: any, action: Action): void;
 
-    guard(value: any): Promise<void> {
+    guard<T>(value: T): Promise<T> {
         return new Promise((resolve, reject) => {
             this.validate("$", value, {
                 reject: (messages: string[]) => { reject(messages); },
-                ignore: () => { resolve(); },
-                accept: () => { resolve(); }
+                ignore: () => { resolve(value); },
+                accept: () => { resolve(value); }
             });
         });
     }
