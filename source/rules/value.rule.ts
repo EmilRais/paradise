@@ -8,7 +8,6 @@ export class ValueRule extends Rule {
 
     validate(path: string, value: any, action: Action): void {
         if ( !isPresent(value) ) return action.ignore();
-        if ( !isBoolean(value) && !isNumber(value) && !isString(value) ) return action.ignore();
 
         const foundMatch = this.targets.some(target => target === value);
         if ( foundMatch ) return action.accept();

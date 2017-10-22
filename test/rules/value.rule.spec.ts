@@ -18,17 +18,6 @@ describe("ValueRule", () => {
         });
     });
 
-    it("should ignore if value is neither boolean, number or string", () => {
-        const rule = new ValueRule(["alice", "bob", "charlie"]);
-        const value = {};
-        const action = new ActionMock();
-        rule.validate("$", value, action);
-
-        return action.check(result => {
-            result.should.be.instanceOf(Ignore);
-        });
-    });
-
     it("should accept if value is a target value", () => {
         const rule = new ValueRule(["alice", "bob", "charlie"]);
         const value = "alice";
