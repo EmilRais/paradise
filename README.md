@@ -112,6 +112,11 @@ A declarative and effective approach to thorough validation.
     ✓ rejects values that are not one of the target values
     ✓ accepts values that are one of the target values
 
+### NotValueRule
+    ✓ ignores missing values
+    ✓ accepts values that are not one of the target values
+    ✓ rejects values that are one of the target values
+
 ### SizeRule
     ✓ ignores missing values
     ✓ ignores values that are neither number, string or array

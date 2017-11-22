@@ -11,6 +11,7 @@ import {
     EmailRule,
     MandatoryFieldsRule,
     MultipleRule,
+    NotValueRule,
     NumberRule,
     ObjectRule,
     OptionalFieldsRule,
@@ -34,6 +35,7 @@ export const Date = () => new DateRule();
 export const Email = () => new EmailRule();
 export const MandatoryFields = (schema: Schema) => new MandatoryFieldsRule(schema);
 export const Multiple = (target: number) => new MultipleRule(target);
+export const NotValue = (targets: Array<boolean | number | string>) => new NotValueRule(targets);
 export const Number = () => new NumberRule();
 export const Object = () => new ObjectRule();
 export const OptionalFields = (schema: Schema) => new OptionalFieldsRule(schema);

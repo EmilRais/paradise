@@ -9,6 +9,7 @@ export * from "./rules/date.rule";
 export * from "./rules/email.rule";
 export * from "./rules/mandatory-fields.rule";
 export * from "./rules/multiple.rule";
+export * from "./rules/not-value.rule";
 export * from "./rules/number.rule";
 export * from "./rules/object.rule";
 export * from "./rules/optional-fields.rule";
