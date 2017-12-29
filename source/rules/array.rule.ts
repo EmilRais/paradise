@@ -21,10 +21,12 @@ export class ArrayRule extends Rule {
             const someRule = new AllRule(this.rules);
             index += 1;
 
-            someRule.validate(somePath, someValue, {
-                ignore: () => { next(null, result); },
-                accept: () => { next(null, result); },
-                reject: (messages: string[]) => { next(null, result.concat(messages)); }
+            process.nextTick(() => {
+                someRule.validate(somePath, someValue, {
+                    ignore: () => { next(null, result); },
+                    accept: () => { next(null, result); },
+                    reject: (messages: string[]) => { next(null, result.concat(messages)); }
+                });
             });
         }, (error, messages) => {
             if ( messages.length === 0 ) return action.accept();
